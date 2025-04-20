@@ -120,7 +120,7 @@ namespace DKMovies.Controllers
             await _bo.DeleteAsync(id);
             return RedirectToAction(nameof(Index));
         }
-
+        
         private async Task PopulateSelectListsAsync(ShowTime? showTime = null)
         {
             var auditoriums = await _bo.GetAuditoriumsAsync();
